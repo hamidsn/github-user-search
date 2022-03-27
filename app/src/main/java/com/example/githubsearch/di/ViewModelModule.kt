@@ -1,6 +1,6 @@
 package com.example.githubsearch.di
 
-import com.example.githubsearch.view.data.repo.UserRepository
+import com.example.githubsearch.repo.UserRepository
 import com.example.githubsearch.view.viewmodel.MainViewModelFactory
 import dagger.Module
 import dagger.Provides

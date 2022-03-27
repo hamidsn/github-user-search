@@ -1,4 +1,4 @@
-package com.example.githubsearch.remote
+package com.example.githubsearch.data.remote
 
 import okhttp3.CacheControl
 import okhttp3.Interceptor

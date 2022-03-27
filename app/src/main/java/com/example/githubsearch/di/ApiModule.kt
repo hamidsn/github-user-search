@@ -2,8 +2,8 @@ package com.example.githubsearch.di
 
 import android.content.Context
 import com.example.githubsearch.BuildConfig
-import com.example.githubsearch.remote.NetworkInterceptor
-import com.example.githubsearch.remote.UserEndpoint
+import com.example.githubsearch.data.remote.NetworkInterceptor
+import com.example.githubsearch.data.remote.UserEndpoint
 import dagger.Module
 import dagger.Provides
 import okhttp3.Cache

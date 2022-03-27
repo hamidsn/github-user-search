@@ -1,6 +1,6 @@
-package com.example.githubsearch.remote
+package com.example.githubsearch.data.remote
 
-import com.example.githubsearch.model.GithubUserListResponse
+import com.example.githubsearch.data.model.GithubUserListResponse
 import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Query

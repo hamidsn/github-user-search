@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewBindingAdapter"
+            type="com.example.githubsearch.adapter.ViewBindingAdapter" />
+
+        <variable
+            name="user"
+            type="com.example.githubsearch.data.model.GithubUser" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_small">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/image_standard"
+            android:layout_height="@dimen/image_standard"
+            android:contentDescription="@string/description_photo"
+            android:src="@drawable/icongel_person"
+            app:imageUrl="@{user.avatarUrl}"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeWidth="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_standard"
+            android:text="@{user.login}"
+            android:textSize="@dimen/text_user_holder" />
+
+    </LinearLayout>
+</layout>

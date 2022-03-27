@@ -1,7 +1,7 @@
-package com.example.githubsearch.view.data.repo
+package com.example.githubsearch.repo
 
-import com.example.githubsearch.model.GithubUser
-import com.example.githubsearch.remote.UserEndpoint
+import com.example.githubsearch.data.model.GithubUser
+import com.example.githubsearch.data.remote.UserEndpoint
 import io.reactivex.Observable
 import javax.inject.Inject
 
