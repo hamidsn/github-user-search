@@ -6,7 +6,7 @@
 
         <variable
             name="viewBindingAdapter"
-            type="com.example.githubsearch.adapter.ViewBindingAdapter" />
+            type="com.example.githubsearch.view.adapter.ViewBindingAdapter" />
 
         <variable
             name="user"
@@ -23,6 +23,7 @@
         <com.google.android.material.imageview.ShapeableImageView
             android:layout_width="@dimen/image_standard"
             android:layout_height="@dimen/image_standard"
+            android:layout_marginStart="@dimen/margin_standard"
             android:contentDescription="@string/description_photo"
             android:src="@drawable/icongel_person"
             app:imageUrl="@{user.avatarUrl}"
@@ -34,6 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_standard"
             android:text="@{user.login}"
+            android:textColor="@color/green_80"
             android:textSize="@dimen/text_user_holder" />
 
     </LinearLayout>

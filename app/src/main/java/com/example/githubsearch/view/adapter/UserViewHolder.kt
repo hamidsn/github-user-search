@@ -1,4 +1,4 @@
-package com.example.githubsearch.adapter
+package com.example.githubsearch.view.adapter
 
 import androidx.recyclerview.widget.RecyclerView
 import com.example.githubsearch.data.model.GithubUser

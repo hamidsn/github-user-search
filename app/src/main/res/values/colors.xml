@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-    <!--https://material.io/design/color/the-color-system.html#tools-for-picking-colors-->
+    <color name="teal_100">#005555</color>
+    <color name="green_80">#e8ffe0</color>
+    <color name="green_200">#98d5b0</color>
+    <color name="green_light">#e5f5eb</color>
+    <color name="green_500">#18ad62</color>
+    <color name="green_700">#008c4c</color>
+    <color name="red_200">#eb8baf</color>
+    <color name="red_700">#b31058</color>
     <color name="colorPrimary">#454347</color>
     <color name="colorPrimaryDark">#282a26</color>
 </resources>

@@ -10,13 +10,13 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.githubsearch.R
-import com.example.githubsearch.adapter.UserAdapter
-import com.example.githubsearch.adapter.UserViewHolder
 import com.example.githubsearch.data.model.GithubUser
 import com.example.githubsearch.data.model.NetworkResult
 import com.example.githubsearch.databinding.ActivityMainBinding
 import com.example.githubsearch.di.DaggerAppComponent
 import com.example.githubsearch.observer.RxMainViewObservable
+import com.example.githubsearch.view.adapter.UserAdapter
+import com.example.githubsearch.view.adapter.UserViewHolder
 import com.example.githubsearch.view.viewmodel.MainViewModel
 import com.example.githubsearch.view.viewmodel.MainViewModelFactory
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity(), UserViewHolder.OnUserClickListener {
 
         disposable.add(
             RxMainViewObservable.fromTextView(binding.searchComponent)
-                .debounce(TIME_OUT_OBSERVABLE, TimeUnit.MILLISECONDS)
+                .debounce(TIME_OUT_OBSERVABLE_MILLISECONDS, TimeUnit.MILLISECONDS)
                 .distinctUntilChanged()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -99,6 +99,6 @@ class MainActivity : AppCompatActivity(), UserViewHolder.OnUserClickListener {
     }
 
     companion object {
-        private const val TIME_OUT_OBSERVABLE: Long = 500
+        private const val TIME_OUT_OBSERVABLE_MILLISECONDS: Long = 500
     }
 }

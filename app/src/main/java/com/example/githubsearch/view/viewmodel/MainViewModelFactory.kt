@@ -7,6 +7,7 @@ import com.example.githubsearch.repo.UserRepository
 class MainViewModelFactory(private val userRepository: UserRepository) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(MainViewModel::class.java)) {
+            @Suppress("UNCHECKED_CAST")
             return MainViewModel(userRepository) as T
         }
         throw IllegalArgumentException("unexpected model class $modelClass")

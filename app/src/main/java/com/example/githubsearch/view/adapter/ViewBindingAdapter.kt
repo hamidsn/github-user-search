@@ -1,4 +1,4 @@
-package com.example.githubsearch.adapter
+package com.example.githubsearch.view.adapter
 
 import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
